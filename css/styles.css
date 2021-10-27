@@ -162,7 +162,6 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71px;
-  letter-spacing: 0.03em;
   color: var(--general-text-color);
 }
 
@@ -170,14 +169,14 @@ img {
   margin-right: 30px;
 }
 
-.header-mail {
+.header-contacts {
   display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-mail:hover,
-.header-mail:focus {
+.header-contacts:hover,
+.header-contacts:focus {
   color: var(--fist-text-color);
 }
 
@@ -188,8 +187,8 @@ img {
   fill: var(--general-text-color);
 }
 
-.header-mail:hover .mail-icon,
-.header-mail:focus .mail-icon {
+.header-contacts:hover .mail-icon,
+.header-contacts:focus .mail-icon {
   fill: var(--fist-text-color);
 }
 
@@ -200,23 +199,9 @@ img {
   fill: var(--general-text-color);
 }
 
-.header-tel:hover .tell-icon,
-.header-tel:focus .tell-icon {
+.header-contacts:hover .tell-icon,
+.header-contacts:focus .tell-icon {
   fill: var(--fist-text-color);
-}
-
-.header-tel {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  color: var(--general-text-color);
-}
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--fist-text-color);
 }
 
 /*герой*/
@@ -482,6 +467,7 @@ img {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .order2 {
@@ -497,6 +483,7 @@ img {
 .order2:focus {
   color: var(--third-text-color);
   background-color: var(--fist-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*Портфолио*/
@@ -512,8 +499,18 @@ img {
   width: 370px;
   margin-top: 30px;
   margin-left: 30px;
+  cursor: pointer;
   background-color: var(--third-text-color);
   box-sizing: border-box;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-item-active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*елементи списка портфолио*/
@@ -555,7 +552,6 @@ img {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
